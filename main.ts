@@ -1,31 +1,19 @@
-class SweetSweetBasil {
-  color:string;
-  constructor(name:string,startColor:string){
-    console.log("hello "+name)
-    this.color = startColor
-  }
-  getColor(){
-    console.log(this.color)
-  }
-}
-let basil = new SweetSweetBasil('teja','bright green')
+//typescript specific
+let hello:any="hello"
 
-basil.getColor()
+//in javascript
+var hi="hi"
 
-console.log(basil.color)
+let abc= 'another'
 
-class Basil extends SweetSweetBasil{
-  constructor(name:string,startColor:string){
-    super(name,startColor)
+function f(input:boolean){
+  let a=100
+  if(input){
+    let b= a+100012
+    return b;
   }
-  setNewColor(newcolor:string){
-    this.color=newcolor
-  }
+  return a;
 }
 
-
-let basil2= new Basil("basil","blue")
-
-basil2.getColor()
-basil2.setNewColor("red")
-basil2.getColor()
+console.log(f(true))
+console.log(f(false))
