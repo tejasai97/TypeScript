@@ -1,9 +1,7 @@
 var SweetSweetClass = (function () {
     function SweetSweetClass() {
+        console.log("Even  more sweeter");
     }
-    SweetSweetClass.prototype.constuctor = function () {
-        console.log("even sweeter");
-    };
     return SweetSweetClass;
 }());
 var basil = new SweetSweetClass();
